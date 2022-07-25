@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <h1 class="headline">Get It Done</h1>
+            <div class="main-container">
+                <label for="main">Task To Add</label>
+                <input type="text" id="main" class="input-main">
+                <button class="btn-main" id="btn-main">Add Task</button>
+            </div>
+        </header>
+        <button class="btn-toggle">Hide List</button>
+        <div class="list-container">
+            <ul>                
+            </ul>
+        </div>
+        <button class="btn-remove">Remove Checked</button>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
