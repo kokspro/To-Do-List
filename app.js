@@ -1,18 +1,15 @@
 const btnCreate = document.querySelector('.btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 
-
 btnCreate.addEventListener('click', () => {
     const input = document.querySelector('.input-main');
     const list = document.querySelector('ul');
 
-
     list.insertAdjacentHTML(
         'beforeend',
-        `<li>${input.value}<button onclick="this.parentElement.remove()">Remove</button></li>`
+        `<li>${input.value}<button class="remove" onclick="this.parentElement.remove()">Remove</button></li>`
     )
     input.value = '';
-
 });
 
 btnToggle.addEventListener('click', () => {
