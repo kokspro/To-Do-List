@@ -27,6 +27,7 @@ header, h1 {
 li {
     display: flex;
     justify-content: space-between;
+    margin: 2px 10px;
 }
 
 input {

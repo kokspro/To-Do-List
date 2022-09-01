@@ -12,7 +12,23 @@ btnCreate.addEventListener('click', () => {
     input.value = '';
 });
 
-btnToggle.addEventListener('click', () => {
+// btnToggle.addEventListener('click', () => {
+//     const listContainer = document.querySelector('.list-container')
+
+//     if ( listContainer.style.display === 'none') {
+//         listContainer.style.display = 'block';
+//         btnToggle.textContent = 'Hide List';
+//     } else {
+//         listContainer.style.display = 'none';
+//         btnToggle.textContent = 'Show List';
+//     }
+// });
+
+// btnToggle.addEventListener('click', showHide);
+
+btnToggle.onclick = showHide;
+
+function showHide() {
     const listContainer = document.querySelector('.list-container')
 
     if ( listContainer.style.display === 'none') {
@@ -22,8 +38,6 @@ btnToggle.addEventListener('click', () => {
         listContainer.style.display = 'none';
         btnToggle.textContent = 'Show List';
     }
-});
-
-
+}
 
 
